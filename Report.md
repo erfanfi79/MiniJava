@@ -6,7 +6,8 @@
 ### Loose Coupling
 در سایت getcodeflow شش مورد loose coupling یافته شد و با توجه به انها تغییرات صورت گرفت:
 تمامی ArrayList ها هنگام تعریف متغیر به List تغییر یافتند.
-### 
+### Duplicate Code
+در کلاس code generator با توجه به سایت getcodeflow شش مورد duplicate code وجود داشت که با اضافه کردن متد جدید و اعمال ان درست شد.
 
 
 

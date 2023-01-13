@@ -1,13 +1,15 @@
 # Refactoring MiniJava
 
 # بازآرایی های استفاده شده
+## Separate Query from Modifier
+در کلاس SymbolTable در متد getNextParameter خروجی داریم و index را نیز یکی اضافه می کنیم به عبارتی تغییری انجام می دهیم که در یک تابع درست نیست پس تابع increaseIndex به Method و تابع increaseParameterIndex به SymbolTable اضافه می کنیم.
 ### Self Encapsulated Field
 در قسمت codeGenerator برای متغیر های private دو کلاس memory , Code Generator متد های setter , getter اضافه شد و کد استفاده ان ها تغییر کرد همچنین برای کلاس lexicalAnalyzer, Parser نیز getter اضافه گردید و کد مربوط به ان باز آرایی شد.
 ### Loose Coupling
 در سایت getcodeflow شش مورد loose coupling یافته شد و با توجه به انها تغییرات صورت گرفت:
 تمامی ArrayList ها هنگام تعریف متغیر به List تغییر یافتند.
 ### Duplicate Code
-در کلاس code generator با توجه به سایت getcodeflow شش مورد duplicate code وجود داشت که با اضافه کردن متد جدید و اعمال ان درست شد.
+در کلاس code generator با توجه به سایت getcodeflow شش مورد duplicate code وجود داشت که 
 
 
 

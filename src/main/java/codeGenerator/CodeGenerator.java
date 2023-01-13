@@ -205,7 +205,7 @@ public class CodeGenerator {
     }
 
     public void intpid(Token next) {
-        getSs().push(new Address(Integer.parseInt(next.value), varType.Int, TypeAddress.Imidiate));
+        getSs().push(new Address(Integer.parseInt(next.value), varType.Int, TypeAddress.Immediate));
     }
 
     public void startCall() {
@@ -242,8 +242,8 @@ public class CodeGenerator {
         }
         Address temp = new Address(getMemory().getTemp(), t);
         getSs().push(temp);
-        getMemory().add3AddressCode(Operation.ASSIGN, new Address(temp.num, varType.Address, TypeAddress.Imidiate), new Address(getSymbolTable().getMethodReturnAddress(className, methodName), varType.Address), null);
-        getMemory().add3AddressCode(Operation.ASSIGN, new Address(getMemory().getCurrentCodeBlockAddress() + 2, varType.Address, TypeAddress.Imidiate), new Address(getSymbolTable().getMethodCallerAddress(className, methodName), varType.Address), null);
+        getMemory().add3AddressCode(Operation.ASSIGN, new Address(temp.num, varType.Address, TypeAddress.Immediate), new Address(getSymbolTable().getMethodReturnAddress(className, methodName), varType.Address), null);
+        getMemory().add3AddressCode(Operation.ASSIGN, new Address(getMemory().getCurrentCodeBlockAddress() + 2, varType.Address, TypeAddress.Immediate), new Address(getSymbolTable().getMethodCallerAddress(className, methodName), varType.Address), null);
         getMemory().add3AddressCode(Operation.JP, new Address(getSymbolTable().getMethodAddress(className, methodName), varType.Address), null, null);
 
         //symbolStack.pop();

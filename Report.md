@@ -2,7 +2,7 @@
 
 # بازآرایی های استفاده شده
 ## State or Strategy
-
+در این بخش دو مورد switch statement در act , TypeAddress بازآرایی شدند.
 ## Facade
 اضافه کردن دو کلاس facade برای memory , codeGeneration و جایگزینی ان ها در Parser , SymbolTable .
 ## Separate Query from Modifier

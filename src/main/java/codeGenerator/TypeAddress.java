@@ -5,5 +5,19 @@ package codeGenerator;
  */
 
 public enum TypeAddress {
-    Direct, Indirect, Imidiate
+    Direct {
+        public String getNum(int num) {
+            return num + "";
+        }
+    }, Indirect {
+        public String getNum(int num) {
+            return "@" + num;
+        }
+    }, Immediate {
+        public String getNum(int num) {
+            return "#" + num;
+        }
+    };
+
+    public abstract String getNum(int num);
 }

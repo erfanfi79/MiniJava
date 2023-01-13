@@ -1,12 +1,13 @@
 package codeGenerator;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by mohammad hosein on 6/27/2015.
  */
 public class Memory {
-    private ArrayList<_3AddressCode> codeBlock;
+    private List<_3AddressCode> codeBlock;
     private int lastTempIndex;
     private int lastDataAddress;
     private final int stratTempMemoryAddress = 500;
@@ -55,7 +56,7 @@ public class Memory {
         }
     }
 
-    public ArrayList<_3AddressCode> getCodeBlock() {
+    public List<_3AddressCode> getCodeBlock() {
         return codeBlock;
     }
 

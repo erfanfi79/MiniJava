@@ -3,7 +3,10 @@
 # بازآرایی های استفاده شده
 ### Self Encapsulated Field
 در قسمت codeGenerator برای متغیر های private دو کلاس memory , Code Generator متد های setter , getter اضافه شد و کد استفاده ان ها تغییر کرد همچنین برای کلاس lexicalAnalyzer, Parser نیز getter اضافه گردید و کد مربوط به ان باز آرایی شد.
-
+### Loose Coupling
+در سایت getcodeflow شش مورد loose coupling یافته شد و با توجه به انها تغییرات صورت گرفت:
+تمامی ArrayList ها هنگام تعریف متغیر به List تغییر یافتند.
+### 
 
 
 
